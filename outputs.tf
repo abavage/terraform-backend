@@ -3,7 +3,7 @@ output "s3_bucket_arn" {
   description = "bucket arn"
 }
 
-output "dynamo_db_table" {
-  value = aws_dynamodb_table.rosa-environment-locks.arn
-  description = "dynamo_db_table"
-}
+#output "dynamo_db_table" {
+#  value = aws_dynamodb_table.rosa-environment-locks.arn
+#  description = "dynamo_db_table"
+#}

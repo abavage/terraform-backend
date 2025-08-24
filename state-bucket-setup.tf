@@ -33,13 +33,13 @@ resource "aws_s3_bucket_public_access_block" "public_access" {
   restrict_public_buckets = true
 }
 
-resource "aws_dynamodb_table" "rosa-environment-locks" {
-  name         = "${var.cluster_name}-${var.dynamo_db_table}"
-  billing_mode = "PAY_PER_REQUEST"
-  hash_key     = "LockID"
-  region       = var.aws_region
-  attribute {
-    name = "LockID"
-    type = "S"
-  }
-}
+#resource "aws_dynamodb_table" "rosa-environment-locks" {
+#  name         = "${var.cluster_name}-${var.dynamo_db_table}"
+#  billing_mode = "PAY_PER_REQUEST"
+#  hash_key     = "LockID"
+#  region       = var.aws_region
+#  attribute {
+#    name = "LockID"
+#    type = "S"
+#  }
+#}
