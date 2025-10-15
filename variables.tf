@@ -16,11 +16,11 @@ variable "terraform_state_bucket" {
   description = "default state file bucket"
 }
 
-variable "dynamo_db_table" {
-  type        = string
-  default     = "rosa-terraform-statefile"
-  description = "dynamo db table name"
-}
+#variable "dynamo_db_table" {
+#  type        = string
+#  default     = "rosa-terraform-statefile"
+#  description = "dynamo db table name"
+#}
 
 
 
